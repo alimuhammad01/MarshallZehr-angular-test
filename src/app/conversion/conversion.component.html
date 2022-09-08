@@ -1,0 +1,32 @@
+<div class="fullscreen-container">
+    <div class="login-container">
+        <h2>Coding Check</h2>
+        <form class="form" [formGroup]="inputForm" novalidate>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    CAD
+                </span>
+                <input type="number" name="amount" min="0" oninput="validity.valid||(value='');"
+                    formControlName="cadAmount">
+            </div>
+            <div class="input-group">
+                <span class="input-group-select">
+                    <select class="custom-select" id="inputGroupSelect02" formControlName="currency">
+                        <option *ngFor="let currency of CurrenciesList let i = index"
+                            [ngValue]="currency" [attr.selected]='i>0 ? "selected" : null'>
+                            {{currency}}
+                        </option>
+                    </select>
+                </span>
+                <input type="number" name="amount" min="0" oninput="validity.valid||(value='');"
+                    formControlName="nonCadAmount" />
+            </div>
+            <div class="input-group">
+                <div class="date">
+                    <input type="date" data-date-format="YYYY-MM-DD" max="{{currentDate | date:'yyyy-MM-dd'}}"
+                        formControlName="date" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

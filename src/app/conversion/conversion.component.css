@@ -1,0 +1,204 @@
+h2{
+    max-width: 50%;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+.fullscreen-container {
+    min-height: 100vh;
+    width: 100vw;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(1, 117, 113, 1) 51%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container {
+    width: 50%;
+    max-width: 400px;
+    padding: 50px 25px 20px;
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 200px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.input-group input {
+    font-size: .9rem;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid hsl(0, 0%, 83%);
+}
+.button {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(53deg, rgba(25, 191, 203, 1) 6%, rgba(188, 81, 218, 1) 73%);
+    color: white;
+    font-size: 1rem;
+}
+
+.button:focus {
+    box-shadow: 0 0 0 1px hsl(178, 100%, 50%);
+}
+
+select {
+    padding: 11px 8px;
+    background-image: linear-gradient(135deg, #3f7e79 10%, #1D6FA3 100%);
+    background-color: #8BC6EC;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(32, 97, 125, 0.4);
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+[type="date"] {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 190px;
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.date {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.output {
+    width: 30%;
+    display: block;
+    margin: 30px auto;
+    background-color: #efefef;
+    text-align: center;
+    padding: 20px
+}
+
+.phone-span {
+    display: block;
+    height: 40px;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #404040;
+}
+
+.input-group {
+    display: flex;
+    align-content: stretch;
+}
+
+.input-group>input {
+    flex: 1 0 auto;
+    padding: 9px 15px;
+    font-size: 17px;
+}
+
+.input-group-addon {
+    background: #eee;
+    padding: 0.6em 1.1em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.input-group-select {
+    background: #eee;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.text {
+    display: table;
+    margin: 20px auto;
+}
+
+.t-dropdown-block {
+    width: 200px;
+    height: 28px;
+    margin: 20px auto;
+    position: relative
+}
+
+.t-dropdown-list {
+    display: none;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    z-index: 10;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    overflow: auto;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.t-dropdown-item {
+    padding: 5px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.t-dropdown-item:hover {
+    background-color: #F1F1F1;
+}
+
+.t-dropdown-select {
+    border: 1px solid #DDD;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFF;
+    box-sizing: content-box;
+}
+
+.t-dropdown-input {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 3px 0 10px;
+    box-sizing: border-box;
+}
+
+.t-select-btn {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/ui-indicatives/100/Indicatives-26-128.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 7px 7px;
+    position: absolute;
+    width: 30px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-left: 1px solid #DDD;
+}
+
+.t-select-btn:active {
+    background-color: #F1F1F1;
+}
